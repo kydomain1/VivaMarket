@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaMarket - Your Dream Lifestyle Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="logo-text">VivaMarket</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Welcome to VivaMarket</h1>
+            <p class="hero-subtitle">Discover Amazing Products & Reviews Across All Categories</p>
+            <form class="search-box" id="searchForm" action="pages/search.html" method="get">
+                <i class="fas fa-search search-icon" id="searchIcon"></i>
+                <input type="text" id="searchInput" name="q" placeholder="Search articles, products...">
+            </form>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Explore Categories</h2>
+            <div class="category-grid">
+                <a href="pages/article-fashion.html" class="category-card" data-category="fashion">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Fashion & Accessories</h3>
+                    <p>Latest trends and style guides</p>
+                </a>
+                <a href="pages/article-beauty.html" class="category-card" data-category="beauty">
+                    <div class="category-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Health & Beauty</h3>
+                    <p>Skincare and wellness tips</p>
+                </a>
+                <a href="pages/article-home.html" class="category-card" data-category="home">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home & Garden</h3>
+                    <p>Transform your living space</p>
+                </a>
+                <a href="pages/article-travel.html" class="category-card" data-category="travel">
+                    <div class="category-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Travel & Accommodation</h3>
+                    <p>Explore the world with us</p>
+                </a>
+                <a href="pages/category-finance.html" class="category-card" data-category="finance">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Finance & Insurance</h3>
+                    <p>Smart money management</p>
+                </a>
+                <a href="pages/article-food.html" class="category-card" data-category="food">
+                    <div class="category-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food & Beverage</h3>
+                    <p>Culinary delights and reviews</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="articles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="fashion">Fashion</button>
+                    <button class="filter-btn" data-filter="beauty">Beauty</button>
+                    <button class="filter-btn" data-filter="home">Home</button>
+                    <button class="filter-btn" data-filter="travel">Travel</button>
+                    <button class="filter-btn" data-filter="finance">Finance</button>
+                    <button class="filter-btn" data-filter="food">Food</button>
+                </div>
+            </div>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Article 1 -->
+                <article class="article-card" data-category="fashion" data-date="2025-08-15">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80" alt="Summer Fashion Trends">
+                        <span class="article-badge">Fashion</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> August 15, 2025</span>
+                        </div>
+                        <h3 class="article-title">Top 10 Summer Fashion Trends for 2025</h3>
+                        <p class="article-excerpt">Discover the hottest fashion trends this summer season with our comprehensive guide to stylish outfits and accessories...</p>
+                        <a href="pages/article-fashion.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="beauty" data-date="2025-06-20">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=800&q=80" alt="Skincare Routine">
+                        <span class="article-badge">Beauty</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> June 20, 2025</span>
+                        </div>
+                        <h3 class="article-title">Ultimate Morning Skincare Routine Guide</h3>
+                        <p class="article-excerpt">Achieve glowing, healthy skin with our expert-recommended morning skincare routine and product reviews...</p>
+                        <a href="pages/article-beauty.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="home" data-date="2025-05-10">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80" alt="Modern Living Room">
+                        <span class="article-badge">Home</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> May 10, 2025</span>
+                        </div>
+                        <h3 class="article-title">Transform Your Living Room: Modern Design Ideas</h3>
+                        <p class="article-excerpt">Explore stunning modern living room designs and find the perfect furniture pieces to create your dream space...</p>
+                        <a href="pages/article-home.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="travel" data-date="2025-03-25">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80" alt="Beach Resort">
+                        <span class="article-badge">Travel</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> March 25, 2025</span>
+                        </div>
+                        <h3 class="article-title">Best Beach Resorts for Your Summer Vacation</h3>
+                        <p class="article-excerpt">Plan your perfect beach getaway with our curated list of top-rated resorts offering luxury and relaxation...</p>
+                        <a href="pages/article-travel.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="food" data-date="2025-01-18">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Gourmet Cooking">
+                        <span class="article-badge">Food</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> January 18, 2025</span>
+                        </div>
+                        <h3 class="article-title">Essential Kitchen Tools for Home Chefs</h3>
+                        <p class="article-excerpt">Elevate your cooking game with our comprehensive review of must-have kitchen tools and appliances...</p>
+                        <a href="pages/article-food.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="logo-text">VivaMarket</span>
+                    </div>
+                    <p>Your trusted source for product reviews and lifestyle inspiration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#" data-category="fashion">Fashion</a></li>
+                        <li><a href="#" data-category="beauty">Beauty</a></li>
+                        <li><a href="#" data-category="home">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VivaMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

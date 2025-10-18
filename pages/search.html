@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - VivaMarket</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="logo-text">VivaMarket</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="search-hero">
+        <div class="container">
+            <h1>Search Results</h1>
+            <div class="search-box-large">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInputPage" placeholder="Search articles, products...">
+                <button id="searchButton" class="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-results">
+        <div class="container">
+            <div class="search-info">
+                <h2 id="searchQuery"></h2>
+                <p id="resultsCount"></p>
+            </div>
+
+            <div class="results-filters">
+                <button class="filter-tag active" data-category="all">All Results</button>
+                <button class="filter-tag" data-category="fashion">Fashion</button>
+                <button class="filter-tag" data-category="beauty">Beauty</button>
+                <button class="filter-tag" data-category="home">Home</button>
+                <button class="filter-tag" data-category="travel">Travel</button>
+                <button class="filter-tag" data-category="finance">Finance</button>
+                <button class="filter-tag" data-category="food">Food</button>
+            </div>
+
+            <div id="resultsContainer" class="results-grid">
+                <!-- Results will be inserted here by JavaScript -->
+            </div>
+
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No results found</h3>
+                <p>Try different keywords or browse our categories</p>
+                <a href="../index.html" class="back-btn">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="logo-text">VivaMarket</span>
+                    </div>
+                    <p>Your trusted source for product reviews and lifestyle inspiration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="article-fashion.html">Fashion</a></li>
+                        <li><a href="article-beauty.html">Beauty</a></li>
+                        <li><a href="article-home.html">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VivaMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>
+

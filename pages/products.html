@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews - VivaMarket</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/products-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="logo-text">VivaMarket</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="products-hero">
+        <div class="container">
+            <h1>Featured Products</h1>
+            <p>Discover our top-rated product recommendations across all categories</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="product-filter-btn active" data-filter="all">All Products</button>
+                <button class="product-filter-btn" data-filter="fashion">Fashion</button>
+                <button class="product-filter-btn" data-filter="beauty">Beauty</button>
+                <button class="product-filter-btn" data-filter="home">Home</button>
+                <button class="product-filter-btn" data-filter="travel">Travel</button>
+                <button class="product-filter-btn" data-filter="food">Food</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Fashion Products -->
+                <div class="product-item" data-category="fashion">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&q=80" alt="Organic Cotton T-Shirt">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Fashion & Accessories</span>
+                        <h3>Organic Cotton Basic Tee Collection</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5/5)</span>
+                        </div>
+                        <p class="product-description">Made from 100% certified organic cotton, these tees are soft, breathable, and ethically produced.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$29.99</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="fashion">
+                    <div class="product-badge editor-choice">Editor's Choice</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&q=80" alt="Linen Pants">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Fashion & Accessories</span>
+                        <h3>Linen Wide-Leg Summer Pants</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0/5)</span>
+                        </div>
+                        <p class="product-description">Breathable linen pants with elastic waistband. Perfect for both casual and dressy occasions.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$68.00</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beauty Products -->
+                <div class="product-item" data-category="beauty">
+                    <div class="product-badge">Top Rated</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=80" alt="Face Cleanser">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Health & Beauty</span>
+                        <h3>Hydrating Gentle Foam Cleanser</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7/5)</span>
+                        </div>
+                        <p class="product-description">pH-balanced formula with hyaluronic acid and ceramides. Suitable for all skin types.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$24.99</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="beauty">
+                    <div class="product-badge">New Arrival</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=600&q=80" alt="Eye Cream">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Health & Beauty</span>
+                        <h3>Brightening Eye Cream with Caffeine</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8/5)</span>
+                        </div>
+                        <p class="product-description">Reduces dark circles and puffiness instantly. Contains caffeine, vitamin K, and peptides.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$38.00</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Products -->
+                <div class="product-item" data-category="home">
+                    <div class="product-badge editor-choice">Editor's Choice</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Modern Sofa">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Home & Garden</span>
+                        <h3>Cloud Comfort Modern Sectional Sofa</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <p class="product-description">Premium fabric upholstery with deep seating. Modular design for flexible configuration.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$1,499.00</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="home">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?w=600&q=80" alt="Indoor Plants">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Home & Garden</span>
+                        <h3>Curated Indoor Plant Collection</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0/5)</span>
+                        </div>
+                        <p class="product-description">Set of 3 easy-care plants with modern ceramic pots. Perfect for any light condition.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$89.99</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Products -->
+                <div class="product-item" data-category="travel">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&q=80" alt="Maldives Overwater Bungalow">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Travel & Accommodation</span>
+                        <h3>5-Night Maldives All-Inclusive Package</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9/5)</span>
+                        </div>
+                        <p class="product-description">Overwater villa accommodation, meals, spa treatments, and water sports included.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$3,499</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="travel">
+                    <div class="product-badge">Luxury</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1520214572569-0d593dc3f1f2?w=600&q=80" alt="French Riviera Luxury Resort">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Travel & Accommodation</span>
+                        <h3>7-Day French Riviera Luxury Package</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7/5)</span>
+                        </div>
+                        <p class="product-description">Deluxe sea-view suite, gourmet breakfast, yacht excursion, spa package, and cooking class.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$5,299</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Products -->
+                <div class="product-item" data-category="food">
+                    <div class="product-badge">Top Pick</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&q=80" alt="Chef Knife">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Food & Beverage</span>
+                        <h3>Professional 8-Inch Chef's Knife</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0/5)</span>
+                        </div>
+                        <p class="product-description">German stainless steel blade with ergonomic handle. Includes protective sheath and lifetime warranty.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$89.99</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="food">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&q=80" alt="Cookware Set">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Food & Beverage</span>
+                        <h3>10-Piece Stainless Steel Cookware Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <p class="product-description">Professional-grade tri-ply construction. Includes skillets, saucepans, stockpot, and steamer insert.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$299.00</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="food">
+                    <div class="product-badge">Chef Recommended</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80" alt="Kitchen Thermometer">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Food & Beverage</span>
+                        <h3>Digital Instant-Read Thermometer</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9/5)</span>
+                        </div>
+                        <p class="product-description">Ultra-fast 2-second reading with backlit display. Waterproof design with magnetic back.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$24.99</span>
+                            <button class="view-product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="logo-text">VivaMarket</span>
+                    </div>
+                    <p>Your trusted source for product reviews and lifestyle inspiration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="../index.html">Fashion</a></li>
+                        <li><a href="../index.html">Beauty</a></li>
+                        <li><a href="../index.html">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VivaMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>
+
